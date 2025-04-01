@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="css/transactionhistory.css">
+</head>
+<body>
+
+    <div class="transaction-container">
+        <h2>Transaction History</h2>
+        
+        <table id="mytable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-history">
+                <tr>
+                  
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <button id="clear" onclick=clear_history>Clear History</button>
+        <button id="dash">Back to Dashboard</button>
+    </div>
+    <p id="hi"></p>
+
+    <script type="module" src="transctionhistory.js"></script>
+
+</body>
+</html>

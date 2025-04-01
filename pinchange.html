@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change PIN</title>
+    <link rel="stylesheet" href="css/pinchange.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Change Your PIN</h2>
+        <form>
+            <label >Current PIN</label>
+            <input type="password" id="current-pin" placeholder="Enter current PIN" required>
+
+            <label >New PIN</label>
+            <input type="password" id="new-pin" placeholder="Enter new PIN" required>
+
+            <label>Confirm New PIN</label>
+            <input type="password" id="confirm-pin" placeholder="Re-enter new PIN" required>
+
+            <button id="change-pin-btn">Change PIN</button>
+
+            <p id="message"></p>
+        </form>
+    </div>
+    <script type="module" src="pinchange.js"></script>
+</body>
+</html>
