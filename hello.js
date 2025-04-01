@@ -1,4 +1,4 @@
-import initBackend from "../backend.js";
+import initBackend from "./backend.js";
 // run();
 // Run the function when the page loads
 
