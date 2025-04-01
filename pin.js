@@ -32,7 +32,7 @@ async function run() {
     
     
     if(result==1){
-        let sound = new Audio("sounds/success2.mp3");
+        let sound = new Audio("success2.mp3");
         sound.play();
         sound.addEventListener("ended", function() {
             window.location.href = "dashboard.html";
@@ -41,7 +41,7 @@ async function run() {
     else{
         document.getElementById("myh2").textContent=messageElement;
         document.getElementById("myh2").style.color="red";
-        let sound=new Audio("sounds/incorrect.mp3");
+        let sound=new Audio("incorrect.mp3");
         sound.play();
 
     }
