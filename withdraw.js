@@ -56,7 +56,7 @@ async function run1(event) {
         const datetime=` ${dates}-${month}-${year}`;
         transactions.push(`Withdraw: ${amount}: ${toshow}:${datetime}`);
         localStorage.setItem("transactions", JSON.stringify(transactions));
-        let sound = new Audio("sounds/success2.mp3");
+        let sound = new Audio("success2.mp3");
         sound.play();
         sound.addEventListener("ended", function() {
             setTimeout(function() {
@@ -66,7 +66,7 @@ async function run1(event) {
     }
     else{
      
-        let sound1=new Audio("sounds/unsuccess.mp3");
+        let sound1=new Audio("unsuccess.mp3");
         sound1.play();           
         document.getElementById("mypp4").textContent = `Your remaing balance is: ${new_balance}`; 
 
@@ -74,7 +74,7 @@ async function run1(event) {
     // document.getElementById("mypp4").textContent = `Your balance is: ${new_balance}`;
 }   
 document.getElementById("myin3").addEventListener("input",()=>{
-    let sound1=new Audio("sounds/button.mp3");
+    let sound1=new Audio("button.mp3");
     sound1.play();           
 
 });
