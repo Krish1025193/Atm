@@ -47,7 +47,7 @@ async function run() {
     }
 }
 document.getElementById("myin").addEventListener("input",()=>{
-    let sound1=new Audio("sounds/button.mp3");
+    let sound1=new Audio("button.mp3");
     sound1.play();           
 });
 document.getElementById("myButton").addEventListener("click", run);
