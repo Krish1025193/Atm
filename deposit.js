@@ -56,7 +56,7 @@ async function run1(event) {
         const datetime=` ${dates}-${month}-${year}`;
         transactions.push(`Deposit: ${amount}: ${toshow}:${datetime}`);
         localStorage.setItem("transactions", JSON.stringify(transactions));
-        let sound = new Audio("sounds/success2.mp3");
+        let sound = new Audio("success2.mp3");
         sound.play();
         sound.addEventListener("ended", function() {
             setTimeout(function() {
@@ -70,7 +70,7 @@ async function run1(event) {
         wasm._set_balance(new_balance);
         wasm._deposit(new_balance);
         // getTransactionHistory();
-        let sound1=new Audio("sounds/unsuccess.mp3");
+        let sound1=new Audio("unsuccess.mp3");
         sound1.play();            
         document.getElementById("mypp2").textContent = `Your remaing balance is: ${new_balance}`; 
         // document.getElementById("mypp1").textContent = "Your amount cannot be negative"; 
@@ -79,7 +79,7 @@ async function run1(event) {
    
 }   
 document.getElementById("myin2").addEventListener("input",()=>{
-    let sound1=new Audio("sounds/button.mp3");
+    let sound1=new Audio("button.mp3");
     sound1.play();           
 });
 document.getElementById("mybut").addEventListener("click", run1);
