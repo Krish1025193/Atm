@@ -1,4 +1,4 @@
-import initBackend from "../backend.js";
+import initBackend from "./backend.js";
 
 let saved_password;
 async function run() {
