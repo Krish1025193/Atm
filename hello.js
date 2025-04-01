@@ -65,7 +65,7 @@ document.querySelector(".actions").addEventListener("click", (event) => {
         case "logout":
             sound.play();
             sound.addEventListener("ended", function() {
-                window.location.href="pin.html";
+                window.location.href="index.html";
             });
            
             break
