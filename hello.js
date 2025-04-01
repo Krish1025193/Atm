@@ -25,7 +25,7 @@ document.querySelector(".actions").addEventListener("click", (event) => {
     let action = event.target.textContent.toLowerCase();
     action = action.split(" ").join("");
     console.log(action);
-    let sound=new Audio("sounds/buttonclick.mp3");
+    let sound=new Audio("buttonclick.mp3");
     // sound.play()
     switch(action){
         case "withdraw":
