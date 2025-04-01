@@ -35,7 +35,7 @@ async function change(event) {
         let new2= wasm._changepass(confirmPin);
         localStorage.setItem("pin", confirmPin);  
         console.log(new2);
-        let sound = new Audio("sounds/success2.mp3");
+        let sound = new Audio("success2.mp3");
         sound.play();
         document.getElementById("message").textContent="";
         
@@ -48,13 +48,13 @@ async function change(event) {
     }
     if(isNaN(newPin)&&!isNaN(currentPin)){
         document.getElementById("message").textContent="New pin cannot be empty";
-        let sound1=new Audio("sounds/unsuccess.mp3");
+        let sound1=new Audio("unsuccess.mp3");
         sound1.play(); 
     }
     
     else{
         // document.getElementById('message').textContent="hello"
-        let sound1=new Audio("sounds/unsuccess.mp3");
+        let sound1=new Audio("unsuccess.mp3");
         sound1.play();           
     }
 }
@@ -62,15 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
     load();
     
     document.getElementById("current-pin").addEventListener("input", () => {
-        new Audio("sounds/button.mp3").play();
+        new Audio("button.mp3").play();
     });
 
     document.getElementById("new-pin").addEventListener("input", () => {
-        new Audio("sounds/button.mp3").play();
+        new Audio("button.mp3").play();
     });
 
     document.getElementById("confirm-pin").addEventListener("input", () => {
-        new Audio("sounds/button.mp3").play();
+        new Audio("button.mp3").play();
     });
 
     document.getElementById("change-pin-btn").addEventListener("click", change);
