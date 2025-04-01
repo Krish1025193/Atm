@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5bae8;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-box{
+    text-align: center;
+    font-size: 3em;
+  }
+  .atm-container {
+    background: linear-gradient(145deg, #6a0dad, #b19cd9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 90vw;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Section 1: User info */
+  .user-info {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #9a73c9;
+  }
+  
+  .user-info h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .user-info p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns per row */
+  gap: 15px; /* Space between buttons */
+}
+
+.actions button {
+  background-color: #d8b4ff;
+  color: #4b0082;
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 100%; /* Ensure button takes full width of its grid cell */
+}
+
+.actions button:hover {
+  background-color: #c8a4f8;
+}
+
+.actions button:active {
+  transform: translateY(3px);
+}
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .actions {
+      grid-template-columns: 1fr;
+    }
+  }

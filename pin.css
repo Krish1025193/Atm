@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c2a2e0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pin-container {
+    background: linear-gradient(145deg, #6a0dad, #b19cd9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    color: #fff;
+    text-align: center;
+}
+
+.pin-container input {
+    width: 80%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.pin-container button {
+    background-color: #d8b4ff;
+    color: #4b0082;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.pin-container button:hover {
+    background-color: #c8a4f8;
+}
+
+.pin-container button:active {
+    transform: translateY(2px);
+}
